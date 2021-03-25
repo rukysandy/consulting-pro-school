@@ -9,7 +9,7 @@ import { BannerStyles } from "../../styles/bannerStyles"
 const Banner = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "flames.jpg" }) {
+      file(relativePath: { eq: "collegStudent.png" }) {
         childImageSharp {
           fluid(maxWidth: 2000, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
@@ -38,7 +38,7 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1 }}
           >
-            It's time to make your business <span>stand out</span>
+            It's time to make your goals in life <span>stand out</span>
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -46,8 +46,9 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1.5 }}
           >
-            Startup is here to help you achieve your business and personal
-            goals, all through a stylish theme
+            AIO is here to help you achieve your educational , proffessional ,
+            business and personal goals. A consultation with us Today will make
+            a difference.
           </motion.p>
           <Link to="about" smooth={true} duration={500}>
             <span className="sr-only">Jump to about</span>
