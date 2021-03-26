@@ -6,7 +6,7 @@ import Perk from "../components/Perk/perk"
 import Button from "../components/Button/button"
 import Packages from "../components/Packages/packages"
 import Package from "../components/Package/package"
-import Contact from "../components/Contact/contact"
+import PageContact from "../components/PageContact/pagecontact"
 import { Link } from "react-scroll"
 
 import perk1Img from "../images/speed.svg"
@@ -21,8 +21,8 @@ export default () => (
     <Banner />
     <TextBlock
       id="about"
-      title="Developing a new business is never easy, but Startup is here to help"
-      paragraph="With a super-fast Gatsby powered website you have the perfect platform to get your idea off the ground. Its the perfect template to help turn your idea into a reality."
+      title="Getting Admission to your Dream School is  never easy, but AIO  is here to help"
+      paragraph="AIO Educational Consult is an academic body that help  educate, inform and inspire  Individual  on how to explore the academic world  with ease."
     >
       <Link to="perks" smooth={true} duration={500}>
         <Button label="Tell Me More" cta="Tell Me More!" />
@@ -30,10 +30,9 @@ export default () => (
     </TextBlock>
     <TextBlockImg
       id="perks"
-      title="We have the tools to help you suceed"
-      subtitle="Startup is perfect for helping to to start and grow your business. As
-          you begin to gain new clients and expand you will see the benefits of
-          a super-fast Gatsby website"
+      title="We have What it takes  to help you succeed"
+      subtitle="AIO Educational consult  is  the perfect  place to   start and grow to your full potential. We  help Individuals  achieve     their proffesional and careers goals   in their chosen feild  .
+          "
     >
       <div className="flex-container trio-block">
         <Perk
@@ -57,8 +56,8 @@ export default () => (
       </div>
     </TextBlockImg>
     <Packages
-      title="Our Packages"
-      para="Choose the perfect solution for you. With benefits to suit all budgets Startup can offer amazing value and expert advice"
+      title="Our Services"
+      para="Choose the perfect solution for you.  AIO Educational Consult can offer amazing value and expert advice"
     >
       <IconContext.Provider
         value={{
@@ -67,8 +66,12 @@ export default () => (
           style: { verticalAlign: "middle", marginRight: "5px" },
         }}
       >
-        <Package title="Standard">
-          <ul>
+        <Package
+          title="Trainings"
+          img={require("../images/ict-training.jpeg")}
+          active={true}
+        >
+          {/* <ul>
             <li>
               <MdDone />1 User
             </li>
@@ -84,13 +87,17 @@ export default () => (
               <MdClear color="red" />
               24/7 Support
             </li>
-          </ul>
-          <Link to="contact" smooth={true} duration={500}>
+          </ul> */}
+          {/* <Link to="contact" smooth={true} duration={500}>
             <Button label="I want this" cta="I want this!" />
-          </Link>
+          </Link> */}
         </Package>
-        <Package title="Hyper" active={true}>
-          <ul>
+        <Package
+          title="University Admissions"
+          active={true}
+          img={require("../images/professional-training.jpeg")}
+        >
+          {/* <ul>
             <li>
               <MdDone />
               24/7 Support
@@ -107,13 +114,17 @@ export default () => (
               <MdDone />
               Unlimited Users
             </li>
-          </ul>
-          <Link to="contact" smooth={true} duration={500}>
+          </ul> */}
+          {/* <Link to="contact" smooth={true} duration={500}>
             <Button label="I want this" cta="I want this!" />
-          </Link>
+          </Link> */}
         </Package>
-        <Package title="Super">
-          <ul>
+        <Package
+          title="Enterprenuership"
+          img={require("../images/enterprenuer.jpeg")}
+          active={true}
+        >
+          {/* <ul>
             <li>
               <MdDone />
               10 Users
@@ -130,17 +141,17 @@ export default () => (
               <MdClear color="red" />
               Dedicated Advisor
             </li>
-          </ul>
-          <Link to="contact" smooth={true} duration={500}>
+          </ul> */}
+          {/* <Link to="contact" smooth={true} duration={500}>
             <Button label="I want this" cta="I want this!" />
-          </Link>
+          </Link> */}
         </Package>
       </IconContext.Provider>
     </Packages>
-    <Contact
+    <PageContact
       id="contact"
-      title="Contact Startup today and see how we can help your business grow"
-      subtitle="Every second counts when you're looking to get your new business started. Drop Startup a message and one of our representatives will be in contact"
+      title="Contact AIO Educational Consult  today and see how we can help you Achieve your Educational and professional goals"
+      subtitle="Every second counts when you're looking to get your new business started. Drop  AIO educational consult a message and one of our representatives will be in contact"
     />
   </>
 )

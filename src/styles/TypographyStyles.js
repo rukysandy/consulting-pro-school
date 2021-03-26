@@ -44,7 +44,7 @@ const TypographyStyles = createGlobalStyle`
     }
 
     @media (min-width: 1080px) {
-      font-size: 1.2rem;
+      font-size: 1rem;
       line-height: 1.4;
     }
   }

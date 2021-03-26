@@ -7,9 +7,9 @@ export default [
     url: "https://www.linkedin.com/in/morgan-baker-developer-inverness/",
     name: "LinkedIn",
   },
-  {
-    icon: <FaGithub />,
-    url: "https://github.com/bagseye",
-    name: "GitHub",
-  },
+  // {
+  //   icon: <FaGithub />,
+  //   url: "https://github.com/bagseye",
+  //   name: "GitHub",
+  // },
 ]

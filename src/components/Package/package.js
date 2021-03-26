@@ -1,11 +1,17 @@
 import React from "react"
 import styled from "styled-components"
 
-const Package = ({ title, children, active }) => {
+const Package = ({ title, children, active, img }) => {
   return (
     <PackageWrapper className={active ? "active" : "not-active"}>
       <div className="content">
+        <img src={img} />
         <h2>{title}</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+          voluptatum laborum numquam blanditiis harum .
+        </p>
         {children}
       </div>
     </PackageWrapper>
@@ -23,15 +29,23 @@ const PackageWrapper = styled.article`
     width: calc(100% / 3);
     margin-bottom: 0;
   }
+  p {
+    padding: 1.5rem;
+    font-weight: 2rem;
+  }
 
   .content {
     background: #051342;
     color: #fff;
     text-align: center;
-    padding: 1.5rem;
+    padding-bottom: 1.5rem;
     border-radius: 4px;
     box-shadow: 0px 0px 22px 7px rgba(0, 0, 0, 0.25);
-
+    img {
+      box-sizing: border-box;
+      max-width: 100%;
+      max-height: 10%;
+    }
     h2 {
       background: -webkit-linear-gradient(45deg, #f441a5, #03a9f4);
       -webkit-background-clip: text;

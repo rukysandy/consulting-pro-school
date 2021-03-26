@@ -28,95 +28,21 @@ const Footer = ({ Logo }) => {
   return (
     <FooterStyles>
       <div className="flex">
-        {Logo ? (
-          <div className="brand-cont">
-            {/* If there is a logo, render this */}
-            {Logo && (
-              <Link to="/">
-                <img src={Logo} alt={`${footerData.title} logo`} />
-              </Link>
-            )}
-            <address>
-              85 Simone Weil Avenue
-              <br />
-              Watton-at-Stone
-              <br />
-              SG14 8BL
-            </address>
-            <a className="telephone" href="tel:+004407076009211">
-              07076 009 211
-            </a>
-          </div>
-        ) : null}
-
-        {mainMenuItems || socialMenuItems || footerMenuItems ? (
-          <div className="menus-cont">
-            {/* If main menu items are being imported, render this */}
-            {mainMenuItems && (
-              <ul className="footer-menu">
-                {/* First we want to filter out the Home menu item, then display the rest of them */}
-                {mainMenuItems
-                  .filter(item => {
-                    return item.title !== "home"
-                  })
-                  .map((item, index) => (
-                    <li key={`menuItem${index}`}>
-                      <Link to={item.path}>{item.title}</Link>
-                    </li>
-                  ))}
-              </ul>
-            )}
-
-            {/* If footer menu items are being imported, render this */}
-            {footerMenuItems && (
-              <ul className="footer-menu">
-                {footerMenuItems.map((item, index) => (
-                  <li key={`footerMenuItem${index}`}>
-                    <Link to={item.path}>{item.title}</Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-
-            {/* If social menu items are being imported, render this */}
-            {socialMenuItems && (
-              <ul className="footer-menu socials">
-                {socialMenuItems.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <a
-                        href={item.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {item.icon}
-                        <span className="sr-only">{item.name}</span>
-                      </a>
-                    </li>
-                  )
-                })}
-              </ul>
-            )}
-          </div>
-        ) : null}
-
         <div className="copy-cont">
-          <ul className="copy">
-            <li>&copy; {new Date().getFullYear()}</li>
-
-            {/* if there is an author stated in the config, render this */}
+          <p>
+            &copy; {new Date().getFullYear()}{" "}
             {footerData.author && (
-              <li>
-                <a
-                  href={footerData.authorSite}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {footerData.author}
-                </a>
-              </li>
+              <a
+                href={footerData.authorSite}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {footerData.author}
+              </a>
             )}
-          </ul>
+          </p>
+
+          {/* if there is an author stated in the config, render this */}
         </div>
       </div>
     </FooterStyles>
@@ -128,7 +54,7 @@ Footer.propTypes = {
 }
 
 const FooterStyles = styled.footer`
-  padding: calc(var(--spacing) * 2);
+  /* padding: calc(var(--spacing) * 2); */
   background-color: var(--black);
   font-family: var(--sansSerif);
   font-weight: 300;
@@ -140,7 +66,7 @@ const FooterStyles = styled.footer`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     margin-left: auto;
     margin-right: auto;
 
@@ -185,8 +111,8 @@ const FooterStyles = styled.footer`
   }
 
   @media (min-width: 768px) {
-    padding-top: calc(var(--spacing) * 4);
-    padding-bottom: calc(var(--spacing) * 2);
+    /* padding-top: calc(var(--spacing) * 4); */
+    /* padding-bottom: calc(var(--spacing) * 2); */
   }
 
   .brand-cont,
@@ -224,7 +150,7 @@ const FooterStyles = styled.footer`
   .footer-menu {
     padding: 0;
     width: 50%;
-    margin-top: calc(var(--spacing) * 2);
+    /* margin-top: calc(var(--spacing) * 2); */
     margin-bottom: 0;
 
     > *:first-child {
@@ -282,8 +208,11 @@ const FooterStyles = styled.footer`
   .copy-cont {
     width: 100%;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: calc(var(--spacing) * 2);
-    padding-top: calc(var(--spacing) * 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: calc(var(--spacing) * 2); */
+    /* padding-top: calc(var(--spacing) * 2); */
 
     @media (min-width: 768px) {
       border-top: none;

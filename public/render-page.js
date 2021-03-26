@@ -44664,7 +44664,7 @@ if ( true && typeof window !== 'undefined' && typeof navigator !== 'undefined' &
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"data\":{\"site\":{\"siteMetadata\":{\"title\":\"Startup\",\"author\":\"Morgan Baker\",\"authorSite\":\"https://www.morganbaker.dev\"}}}}");
+module.exports = JSON.parse("{\"data\":{\"site\":{\"siteMetadata\":{\"title\":\"AIO Educational Consult\",\"author\":\" @ SandyConcepts\",\"authorSite\":\"https://www.rukevwesandra.dev\"}}}}");
 
 /***/ }),
 
@@ -44675,7 +44675,7 @@ module.exports = JSON.parse("{\"data\":{\"site\":{\"siteMetadata\":{\"title\":\"
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"data\":{\"site\":{\"siteMetadata\":{\"defaultTitle\":\"Startup\",\"titleTemplate\":\"%s | Helping startups get started\",\"defaultDescription\":\"A simple one-page site for new businesses that uses GatsbyJS\",\"authorSite\":\"https://www.morganbaker.dev\",\"defaultImage\":\"/yellow-metal-design-decoration.jpg\",\"twitterUsername\":\"@twitter\"}}}}");
+module.exports = JSON.parse("{\"data\":{\"site\":{\"siteMetadata\":{\"defaultTitle\":\"AIO Educational Consult\",\"titleTemplate\":\"%s | Helping startups get started\",\"defaultDescription\":\"A simple one-page site for new businesses that uses GatsbyJS\",\"authorSite\":\"https://www.rukevwesandra.dev\",\"defaultImage\":\"/yellow-metal-design-decoration.jpg\",\"twitterUsername\":\"@twitter\"}}}}");
 
 /***/ }),
 
@@ -44710,57 +44710,13 @@ var Footer = function Footer(_ref) {
   var footerData = data.site.siteMetadata;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FooterStyles, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "flex"
-  }, Logo ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "brand-cont"
-  }, Logo && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    src: Logo,
-    alt: footerData.title + " logo"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("address", null, "85 Simone Weil Avenue", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), "Watton-at-Stone", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), "SG14 8BL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    className: "telephone",
-    href: "tel:+004407076009211"
-  }, "07076 009 211")) : null, _constants_menu_items__WEBPACK_IMPORTED_MODULE_3__["mainMenuItems"] || _constants_menu_items__WEBPACK_IMPORTED_MODULE_3__["socialMenuItems"] || _constants_menu_items__WEBPACK_IMPORTED_MODULE_3__["footerMenuItems"] ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "menus-cont"
-  }, _constants_menu_items__WEBPACK_IMPORTED_MODULE_3__["mainMenuItems"] && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-    className: "footer-menu"
-  }, _constants_menu_items__WEBPACK_IMPORTED_MODULE_3__["mainMenuItems"].filter(function (item) {
-    return item.title !== "home";
-  }).map(function (item, index) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-      key: "menuItem" + index
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-      to: item.path
-    }, item.title));
-  })), _constants_menu_items__WEBPACK_IMPORTED_MODULE_3__["footerMenuItems"] && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-    className: "footer-menu"
-  }, _constants_menu_items__WEBPACK_IMPORTED_MODULE_3__["footerMenuItems"].map(function (item, index) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-      key: "footerMenuItem" + index
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-      to: item.path
-    }, item.title));
-  })), _constants_menu_items__WEBPACK_IMPORTED_MODULE_3__["socialMenuItems"] && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-    className: "footer-menu socials"
-  }, _constants_menu_items__WEBPACK_IMPORTED_MODULE_3__["socialMenuItems"].map(function (item, index) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-      key: index
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      href: item.url,
-      target: "_blank",
-      rel: "noopener noreferrer"
-    }, item.icon, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-      className: "sr-only"
-    }, item.name)));
-  }))) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "copy-cont"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-    className: "copy"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, "\xA9 ", new Date().getFullYear()), footerData.author && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "\xA9 ", new Date().getFullYear(), " ", footerData.author && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: footerData.authorSite,
     target: "_blank",
     rel: "noopener noreferrer"
-  }, footerData.author))))));
+  }, footerData.author)))));
 };
 
 Footer.propTypes = {
@@ -44768,7 +44724,7 @@ Footer.propTypes = {
 };
 var FooterStyles = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].footer.withConfig({
   displayName: "Footer__FooterStyles"
-})(["padding:calc(var(--spacing) * 2);background-color:var(--black);font-family:var(--sansSerif);font-weight:300;font-style:normal;color:#fff;.flex{width:100%;display:flex;flex-direction:row;flex-wrap:wrap;max-width:1400px;margin-left:auto;margin-right:auto;@media (min-width:768px){flex-direction:row;justify-content:flex-end;}}.telephone,address,li{font-size:var(--footerMenuItem);}address{font-style:normal;margin-bottom:var(--spacing);}li{text-transform:capitalize;list-style:none;padding-left:0;margin-top:5px;margin-bottom:5px;@media (min-width:768px){margin-top:10px;margin-bottom:var(--spacing);}}a{text-decoration:none;color:#fff;transition:var(--transMed);&:hover{color:var(--primaryColor);}}@media (min-width:768px){padding-top:calc(var(--spacing) * 4);padding-bottom:calc(var(--spacing) * 2);}.brand-cont,.brand-cont img{margin-bottom:calc(var(--spacing) * 2);}.brand-cont{width:100%;@media (min-width:768px){width:25%;}a{display:inline-block;}img{max-width:125px;width:100%;}}.menus-cont{width:100%;border-top:1px solid rgba(255,255,255,0.1);@media (min-width:768px){width:75%;border-top:0;}}.footer-menu{padding:0;width:50%;margin-top:calc(var(--spacing) * 2);margin-bottom:0;> *:first-child{margin-top:0;}li{margin-bottom:var(--spacing);&:last-child{margin-bottom:0;}}@media (min-width:768px){width:auto;margin-top:0;margin-bottom:0;border-left:1px solid rgba(255,255,255,0.1);padding-left:calc(var(--spacing) * 2);padding-right:calc(var(--spacing) * 5);li{padding-left:calc(var(--spacing) / 2);}&:last-child{padding-right:0;}}}.menus-cont{display:flex;justify-content:flex-end;}.socials{display:flex;li{margin-top:0;padding:0;margin-right:var(--spacing);&:last-child{margin-right:0;}}a{font-size:24px;}}.copy-cont{width:100%;border-top:1px solid rgba(255,255,255,0.1);margin-top:calc(var(--spacing) * 2);padding-top:calc(var(--spacing) * 2);@media (min-width:768px){border-top:none;}.copy{display:flex;padding:0;margin-top:0;margin-bottom:0;li{margin-right:var(--spacing);}@media (min-width:768px){justify-content:center;li{margin:0 calc(var(--spacing) / 2);font-size:0.75rem;}}}}"]);
+})(["background-color:var(--black);font-family:var(--sansSerif);font-weight:300;font-style:normal;color:#fff;.flex{width:100%;display:flex;flex-direction:row;flex-wrap:wrap;margin-left:auto;margin-right:auto;@media (min-width:768px){flex-direction:row;justify-content:flex-end;}}.telephone,address,li{font-size:var(--footerMenuItem);}address{font-style:normal;margin-bottom:var(--spacing);}li{text-transform:capitalize;list-style:none;padding-left:0;margin-top:5px;margin-bottom:5px;@media (min-width:768px){margin-top:10px;margin-bottom:var(--spacing);}}a{text-decoration:none;color:#fff;transition:var(--transMed);&:hover{color:var(--primaryColor);}}@media (min-width:768px){}.brand-cont,.brand-cont img{margin-bottom:calc(var(--spacing) * 2);}.brand-cont{width:100%;@media (min-width:768px){width:25%;}a{display:inline-block;}img{max-width:125px;width:100%;}}.menus-cont{width:100%;border-top:1px solid rgba(255,255,255,0.1);@media (min-width:768px){width:75%;border-top:0;}}.footer-menu{padding:0;width:50%;margin-bottom:0;> *:first-child{margin-top:0;}li{margin-bottom:var(--spacing);&:last-child{margin-bottom:0;}}@media (min-width:768px){width:auto;margin-top:0;margin-bottom:0;border-left:1px solid rgba(255,255,255,0.1);padding-left:calc(var(--spacing) * 2);padding-right:calc(var(--spacing) * 5);li{padding-left:calc(var(--spacing) / 2);}&:last-child{padding-right:0;}}}.menus-cont{display:flex;justify-content:flex-end;}.socials{display:flex;li{margin-top:0;padding:0;margin-right:var(--spacing);&:last-child{margin-right:0;}}a{font-size:24px;}}.copy-cont{width:100%;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:center;align-items:center;@media (min-width:768px){border-top:none;}.copy{display:flex;padding:0;margin-top:0;margin-bottom:0;li{margin-right:var(--spacing);}@media (min-width:768px){justify-content:center;li{margin:0 calc(var(--spacing) / 2);font-size:0.75rem;}}}}"]);
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
 
 /***/ }),
@@ -45010,12 +44966,15 @@ var Layout = function Layout(_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ([{
   path: "/",
+  text: "home"
+}, {
+  path: "/",
+  text: "services"
+}, {
+  path: "/",
   text: "about"
 }, {
-  path: "/",
-  text: "packages"
-}, {
-  path: "/",
+  path: "/Contact",
   text: "contact"
 }]);
 
@@ -45133,7 +45092,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n  h1,\n  h2,\n  h3,\n  h4,\n  h5,\n  h6 {\n    font-weight: 900;\n    line-height: 1.4;\n  }\n\n  h1,\n  h2 {\n    font-size: 1.5rem;\n    font-weight: 400;\n    letter-spacing: -1px;\n    margin: 1rem 0;\n\n    @media (min-width: 768px) {\n      font-size: 1.6rem;\n      line-height: 1.3;\n    }\n\n    @media (min-width: 1080px) {\n      font-size: 2rem;\n    }\n  }\n\n  h3 {\n    font-size: 1.5rem;\n  }\n\n  p {\n    font-size: 1rem;\n    line-height: 1.45;\n    margin: 1rem 0;\n\n    @media (min-width: 768px) {\n      font-size: 1.1rem;\n    }\n\n    @media (min-width: 1080px) {\n      font-size: 1.2rem;\n      line-height: 1.4;\n    }\n  }\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n  h1,\n  h2,\n  h3,\n  h4,\n  h5,\n  h6 {\n    font-weight: 900;\n    line-height: 1.4;\n  }\n\n  h1,\n  h2 {\n    font-size: 1.5rem;\n    font-weight: 400;\n    letter-spacing: -1px;\n    margin: 1rem 0;\n\n    @media (min-width: 768px) {\n      font-size: 1.6rem;\n      line-height: 1.3;\n    }\n\n    @media (min-width: 1080px) {\n      font-size: 2rem;\n    }\n  }\n\n  h3 {\n    font-size: 1.5rem;\n  }\n\n  p {\n    font-size: 1rem;\n    line-height: 1.45;\n    margin: 1rem 0;\n\n    @media (min-width: 768px) {\n      font-size: 1.1rem;\n    }\n\n    @media (min-width: 1080px) {\n      font-size: 1rem;\n      line-height: 1.4;\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

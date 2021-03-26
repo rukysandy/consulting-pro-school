@@ -40,6 +40,8 @@ const PackagesWrapper = styled.section`
 
     @media (min-width: 992px) {
       flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
     }
   }
 `
