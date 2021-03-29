@@ -1,12 +1,21 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelope, faPhoneAlt } from "@fortawesome/free-solid-svg-icons"
 import Button from "../components/Button/button"
 import { Link } from "react-scroll"
 import { motion } from "framer-motion"
 import { BannerStyles } from "../styles/bannerStyles"
 
+import TextBlock from "../components/TextBlock/textBlock"
+import TextBlockImg from "../components/TextBlockImg/textBlockImg"
+import Perk from "../components/Perk/perk"
+
+import Packages from "../components/Packages/packages"
+import Package from "../components/Package/package"
 import PageContact from "../components/PageContact/pagecontact"
+import styled from "styled-components"
 
 const Contact = () => {
   const data = useStaticQuery(graphql`
@@ -55,7 +64,19 @@ const Contact = () => {
             </Link>
           </div>
         </BackgroundImage>
-        <PageContact />
+        <TextBlock id="" title="Our Contact Information ">
+          <p>
+            <FontAwesomeIcon icon={faPhoneAlt} />
+            Phone: <p>800-120-2132</p>
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faEnvelope} />
+            Email: <p style={{}}> abaseg1@gmail.com</p>
+          </p>
+        </TextBlock>
+        <TextBlock id="" title="Send us a Message ">
+          <PageContact />
+        </TextBlock>
       </BannerStyles>
     </>
   )

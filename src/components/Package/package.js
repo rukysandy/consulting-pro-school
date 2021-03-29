@@ -1,17 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 
-const Package = ({ title, children, active, img }) => {
+const Package = ({ title, children, active, img, Content }) => {
   return (
     <PackageWrapper className={active ? "active" : "not-active"}>
       <div className="content">
         <img src={img} />
         <h2>{title}</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-          voluptatum laborum numquam blanditiis harum .
-        </p>
+        <p>{Content}</p>
         {children}
       </div>
     </PackageWrapper>
@@ -28,6 +24,7 @@ const PackageWrapper = styled.article`
   @media (min-width: 992px) {
     width: calc(100% / 3);
     margin-bottom: 0;
+    margin-bottom: 12rem;
   }
   p {
     padding: 1.5rem;

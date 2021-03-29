@@ -44776,7 +44776,7 @@ var Navbar = function Navbar(_ref) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
       key: index
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      href: "#"
+      href: item.path
     }, item.text));
   })));
 };
@@ -44968,14 +44968,14 @@ __webpack_require__.r(__webpack_exports__);
   path: "/",
   text: "home"
 }, {
-  path: "/",
+  path: "/Services",
   text: "services"
 }, {
-  path: "/",
+  path: "/About",
   text: "about"
 }, {
   path: "/Contact",
-  text: "contact"
+  text: "contact "
 }]);
 
 /***/ }),

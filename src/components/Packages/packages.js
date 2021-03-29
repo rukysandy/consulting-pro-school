@@ -34,14 +34,16 @@ const PackagesWrapper = styled.section`
 
   .flex-container {
     flex-direction: column-reverse;
+    flex-direction: column-reverse;
     padding-top: 80px;
     align-items: center;
     justify-content: center;
 
-    @media (min-width: 992px) {
+    @media (min-width: 1002px) {
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
+      flex-wrap: wrap;
     }
   }
 `

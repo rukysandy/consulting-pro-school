@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Banner from "../components/Banner/banner"
 import TextBlock from "../components/TextBlock/textBlock"
 import TextBlockImg from "../components/TextBlockImg/textBlockImg"
@@ -8,6 +8,9 @@ import Packages from "../components/Packages/packages"
 import Package from "../components/Package/package"
 import PageContact from "../components/PageContact/pagecontact"
 import { Link } from "react-scroll"
+import links from "../constants/links"
+
+import styled from "styled-components"
 
 import perk1Img from "../images/speed.svg"
 import perk2Img from "../images/piggy-bank.svg"
@@ -39,13 +42,13 @@ export default () => (
           img={perk1Img}
           alt="Super fast speed increases"
           title="Speedy"
-          content="Super-fast response times ensure your business is not affected"
+          content="Super-fast Degree and masters programs"
         />
         <Perk
           img={perk2Img}
           alt="Great savings to be made"
           title="Affordable"
-          content="A choice of packages to suit every business type and size"
+          content="Schools with affordable tuition fee"
         />
         <Perk
           img={perk3Img}
@@ -67,9 +70,10 @@ export default () => (
         }}
       >
         <Package
-          title="Trainings"
-          img={require("../images/ict-training.jpeg")}
+          title="Trainings and Professional Developement"
+          img={require("../images/proffesional-developement.jpeg")}
           active={true}
+          Content=" We offer  professional courses   such as Human Resource Management, Business Administration and Management, Small Business Management, and  Marketing to both Organizations and  individuals"
         >
           {/* <ul>
             <li>
@@ -96,6 +100,8 @@ export default () => (
           title="University Admissions"
           active={true}
           img={require("../images/professional-training.jpeg")}
+          Content=" We  help secondary school leavers and those interested in pursuing undergraduate or  higher degree  get Admitted to prestigious  school of higher learning  In Nigeria and Over sea
+            "
         >
           {/* <ul>
             <li>
@@ -123,6 +129,8 @@ export default () => (
           title="Enterprenuership"
           img={require("../images/enterprenuer.jpeg")}
           active={true}
+          Content=" We  help train and guide individuals how to start and build successful businesses from new and innovative Ideas
+            "
         >
           {/* <ul>
             <li>
@@ -148,6 +156,12 @@ export default () => (
         </Package>
       </IconContext.Provider>
     </Packages>
+    {/* <ButtonDiv>
+      <Link to={links[1].path} smooth={true} duration={500}>
+        <Button label="Tell Me More" cta="More Services" />
+      </Link>
+    </ButtonDiv> */}
+
     <PageContact
       id="contact"
       title="Contact AIO Educational Consult  today and see how we can help you Achieve your Educational and professional goals"
@@ -155,3 +169,9 @@ export default () => (
     />
   </>
 )
+
+const ButtonDiv = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`
